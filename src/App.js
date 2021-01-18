@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { AddPlants, Explore, MyPlants, Settings, Tasks } from "./pages"
 import { ThemeProvider } from 'styled-components';
-import theme from "./theme"
+import theme from "./styles/theme"
 
 function App() {
   return (

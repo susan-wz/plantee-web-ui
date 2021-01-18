@@ -4,4 +4,4 @@ import MyPlants from "./MyPlants"
 import Settings from "./Settings"
 import Tasks from "./Tasks"
 
-export { AddPlants, Explore, MyPlants, Settings, Tasks}
+export { AddPlants, Explore, MyPlants, Settings, Tasks }
