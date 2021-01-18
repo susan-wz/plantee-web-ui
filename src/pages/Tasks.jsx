@@ -6,7 +6,7 @@ export default function Tasks() {
       <Heading size="H1">Tasks</Heading>
       <Paragraph>test</Paragraph>
       <Caption>Caption test</Caption>
-      <Icon symbol="lightbulb"/>
+      <Icon symbol="upArrow" colour="primary" />
     </div>
   );
 }

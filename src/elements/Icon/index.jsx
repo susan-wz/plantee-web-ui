@@ -29,9 +29,10 @@ import {
   Upload
 } from "./svgs"
 
-export default function Icon({ colour, symbol }) {
+export default function Icon({ colour, symbol, size}) {
   const iconColour = colour ? colour : 'dark-neutral';
-  const iconSymbol = symbol ? symbol : 'leaf'
+  const iconSymbol = symbol ? symbol : 'leaf';
+  const iconSize = size ? size : 24;
   let iconSvg;
 
   switch (iconSymbol) {
@@ -77,7 +78,7 @@ export default function Icon({ colour, symbol }) {
     case "delete":
       iconSvg = <Delete />
       break
-    case "DownArrow":
+    case "downArrow":
       iconSvg = <DownArrow />
       break
     case "fertilizer":
@@ -121,6 +122,6 @@ export default function Icon({ colour, symbol }) {
   }
 
   return (
-    <StyledIcon>{iconSvg}</StyledIcon>
+    <StyledIcon colour={iconColour} size={iconSize}>{iconSvg}</StyledIcon>
   );
 }
