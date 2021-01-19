@@ -24,6 +24,8 @@ const DesktopNav = styled.nav`
   display: none;
   top: 0;
   @media ${breakpoint.lg} {
+    z-index: 2;
+    background-color: ${props => props.theme.white};
     position: fixed;
     height: 100vh;
     width: 320px;

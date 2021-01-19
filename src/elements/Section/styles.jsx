@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const StyledSection = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: ${props => {
     if (props.align === "left") {
       return "flex-start"
