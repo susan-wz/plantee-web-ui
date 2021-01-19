@@ -52,7 +52,7 @@ color: ${props => {
   font-weight: 500;
   margin: 0px;
   @media ${breakpoint.lg} {
-    font-size: 44px;
+    font-size: 42px;
   }
 `
 

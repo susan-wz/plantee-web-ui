@@ -7,9 +7,11 @@ export default function Tasks() {
       <Container>
         <Row>
           <Col>
-            <TaskDayHeading />
+            <TaskDayHeading date={"15 Dec 2020"} />
             <TaskCard type="water" plantName={"Snake Plant"} lastEvent={"4 Dec 2020"} frequency={6}/>
             <TaskCard type="fertilize" plantName={"Pilea"} lastEvent={"4 Dec 2020"} frequency={8}/>
+            <TaskDayHeading date={"17 Dec 2020"} />
+            <TaskCard type="water" plantName={"Cheese Plant"} lastEvent={"4 Dec 2020"} frequency={8}/>
           </Col>
         </Row>
       </Container>
