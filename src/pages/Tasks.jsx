@@ -1,5 +1,4 @@
-import { Heading } from "../elements"
-import { Layout, TaskCard } from "../blocks"
+import { Layout, TaskCard, TaskDayHeading } from "../blocks"
 import { Container, Row, Col } from "react-bootstrap"
 
 export default function Tasks() {
@@ -8,8 +7,9 @@ export default function Tasks() {
       <Container>
         <Row>
           <Col>
-            <TaskCard type="water"/>
-            <TaskCard type="fertilize"/>
+            <TaskDayHeading />
+            <TaskCard type="water" plantName={"Snake Plant"} lastEvent={"4 Dec 2020"} frequency={6}/>
+            <TaskCard type="fertilize" plantName={"Pilea"} lastEvent={"4 Dec 2020"} frequency={8}/>
           </Col>
         </Row>
       </Container>

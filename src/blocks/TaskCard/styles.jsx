@@ -25,6 +25,9 @@ const TitleSection = styled.div`
   width: 72%;
   @media ${breakpoint.lg} {
     width: 32%;
+    > :last-child {
+      display: none;
+    }
   }
 `;
 

@@ -1,7 +1,7 @@
 import { StyledTaskCard, DesktopTaskIcon, TitleSection, DesktopText, IconSection } from "./styles"
 import { Icon, Heading, Caption } from "../../elements"
 
-export default function TaskCard({ type }) {
+export default function TaskCard({ type, plantName, lastEvent, frequency }) {
   const taskType = type ? type : 'water'
 
   let backgroundColour;
@@ -27,13 +27,13 @@ export default function TaskCard({ type }) {
       </DesktopTaskIcon>
       <TitleSection>
         <Caption colour={textColour}>{typeText}</Caption>
-        <Heading size="H4" align="left" colour={textColour}>Senseveria</Heading>
-        <Caption colour={textColour}>Last watered 4 Dec 2020</Caption>
+        <Heading size="H4" align="left" colour={textColour}>{plantName}</Heading>
+        <Caption colour={textColour}>Last watered {lastEvent}</Caption>
       </TitleSection>
       <DesktopText>
         <div>
-          <Caption colour={textColour}>Last watered 4 Dec 2020</Caption>
-          <Caption colour={textColour}>Check soil moisture every 6 days</Caption>
+          <Caption colour={textColour}>Last watered {lastEvent}</Caption>
+          <Caption colour={textColour}>Check soil moisture every {frequency} days</Caption>
         </div>
       </DesktopText>
       <IconSection>
