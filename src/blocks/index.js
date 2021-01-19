@@ -1,4 +1,5 @@
 import Nav from "./Nav"
 import Layout from "./Layout"
+import TaskCard from "./TaskCard"
 
-export { Nav, Layout }
+export { Nav, Layout, TaskCard }

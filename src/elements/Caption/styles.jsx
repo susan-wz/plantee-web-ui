@@ -4,6 +4,7 @@ const StyledCaption = styled.p`
   font-size: 12px;
   letter-spacing: 0.5px;
   font-style: italic;
+  margin: 4px;
   color: ${props => {
     if (props.colour === "primary") {
       return props.theme.primary

@@ -1,10 +1,19 @@
-import { Heading, Paragraph, Caption, Icon, Card } from "../elements"
-import { Layout } from "../blocks"
+import { Heading } from "../elements"
+import { Layout, TaskCard } from "../blocks"
+import { Container, Row, Col } from "react-bootstrap"
 
 export default function Tasks() {
   return (
     <Layout>
-        <Heading size="H1">Tasks</Heading>
+      <Container>
+        <Row>
+          <Col>
+            <Heading size="H1">Tasks</Heading>
+            <TaskCard type="water"/>
+            <TaskCard type="water"/>
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 }
