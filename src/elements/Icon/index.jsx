@@ -16,6 +16,7 @@ import {
   Filter,
   Leaf,
   Lightbulb,
+  Logo,
   Next,
   Previous,
   Repeat,
@@ -29,7 +30,7 @@ import {
   Upload
 } from "./svgs"
 
-export default function Icon({ colour, symbol, size}) {
+export default function Icon({ colour, symbol, size }) {
   const iconColour = colour ? colour : 'dark-neutral';
   const iconSymbol = symbol ? symbol : 'leaf';
   const iconSize = size ? size : 24;
@@ -86,6 +87,9 @@ export default function Icon({ colour, symbol, size}) {
       break
     case "filter":
       iconSvg = <Filter />
+      break
+    case "logo":
+      iconSvg = <Logo />
       break
     case "next":
       iconSvg = <Next />

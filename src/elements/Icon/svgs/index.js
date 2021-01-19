@@ -14,6 +14,7 @@ import Fertilizer from "./Fertilizer"
 import Filter from "./Filter"
 import Leaf from "./Leaf"
 import Lightbulb from "./Lightbulb"
+import Logo from "./Logo"
 import Next from "./Next"
 import Previous from "./Previous"
 import Repeat from "./Repeat"
@@ -44,6 +45,7 @@ export {
   Filter,
   Leaf,
   Lightbulb,
+  Logo,
   Next, 
   Previous,
   Repeat,
