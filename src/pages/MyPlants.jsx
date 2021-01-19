@@ -1,7 +1,10 @@
-
+import { Layout } from "../blocks"
+import { Heading } from "../elements"
 
 export default function MyPlants() {
   return (
-    <div>myplants</div>
+    <Layout>
+        <Heading size="H1">My Plants</Heading>
+    </Layout>
   );
 }

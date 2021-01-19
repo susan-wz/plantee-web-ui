@@ -11,19 +11,19 @@ function App() {
       <GlobalStyles />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Tasks />
           </Route>
-          <Route path="/explore">
+          <Route exact path="/explore">
             <Explore />
           </Route>
-          <Route path="/my_plants">
+          <Route exact path="/my_plants">
             <MyPlants />
           </Route>
-          <Route path="/add_plants">
+          <Route exact path="/add_plants">
             <AddPlants />
           </Route>
-          <Route path="/settings">
+          <Route exact path="/settings">
             <Settings />
           </Route>
         </Switch>
