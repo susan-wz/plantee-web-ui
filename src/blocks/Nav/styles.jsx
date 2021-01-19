@@ -20,6 +20,7 @@ const MobileNav = styled.nav`
 
 const DesktopNav = styled.nav`
   display: none;
+  top: 0;
   @media ${breakpoint.lg} {
     position: fixed;
     height: 100vh;
