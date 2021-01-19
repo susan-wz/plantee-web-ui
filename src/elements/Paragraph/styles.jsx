@@ -3,6 +3,7 @@ import breakpoint from "../../styles/breakpoints"
 
 const StyledParagraph = styled.p`
   color: ${props => props.invert ? props.theme.white : props.theme.darkNeutral};
+  margin: 0px;
   text-align: ${props => {
     if (props.align === 'center') {
       return 'center'

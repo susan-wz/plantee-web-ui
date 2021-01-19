@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import breakpoint from "../../styles/breakpoints"
 
 const MobileNav = styled.nav`
+  z-index: 2;
+  background-color: ${props => props.theme.white};
   position: fixed;
   right: 0;
   left: 0;

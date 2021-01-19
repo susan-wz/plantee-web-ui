@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import breakpoint from "../../styles/breakpoints"
 
 const StyledLayout = styled.div`
+  position: relative;
+  z-index: 1;
   margin: 2rem;
   > :first-child {
     display: flex;
