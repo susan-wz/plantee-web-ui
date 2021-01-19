@@ -4,13 +4,12 @@ import { Container, Row, Col } from "react-bootstrap"
 
 export default function Tasks() {
   return (
-    <Layout>
+    <Layout settings back title="Tasks">
       <Container>
         <Row>
           <Col>
-            <Heading size="H1">Tasks</Heading>
             <TaskCard type="water"/>
-            <TaskCard type="water"/>
+            <TaskCard type="fertilize"/>
           </Col>
         </Row>
       </Container>
