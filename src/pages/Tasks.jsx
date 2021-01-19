@@ -9,7 +9,7 @@ export default function Tasks() {
         <Heading size="H1">Tasks</Heading>
         <Paragraph>test</Paragraph>
         <Caption>Caption test</Caption>
-        <Icon symbol="upArrow" colour="primary" />
+        <Icon symbol="logo" colour="white" />
       </Card>
     </Layout>
   );

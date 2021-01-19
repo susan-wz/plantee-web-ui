@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import breakpoint from "../../styles/breakpoints"
 
-const StyledNav = styled.nav`
+const MobileNav = styled.nav`
   position: fixed;
   right: 0;
   left: 0;
@@ -12,6 +13,41 @@ const StyledNav = styled.nav`
   padding: 1.25rem;
   display: flex;
   justify-content: space-around;
+  @media ${breakpoint.lg} {
+    display: none;
+  }
 `
 
-export default StyledNav
+const DesktopNav = styled.nav`
+  display: none;
+  @media ${breakpoint.lg} {
+    position: fixed;
+    height: 100vh;
+    width: 320px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: ${props => `1px solid ${props.theme.mediumNeutral}`};
+    display: inline-block;
+    > div {
+      padding: 1rem;
+      > h2 {
+      display: inline-block;
+      padding: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+    > ul {
+      margin: 0px;
+      padding: 1rem;
+      list-style-type: none;
+      > a {
+        text-decoration: none;
+        > li > * {
+          display: inline-block;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+`
+
+export { MobileNav, DesktopNav }
