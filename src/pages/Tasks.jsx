@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 export default function Tasks() {
   return (
-    <Layout settings back title="Tasks">
+    <Layout settings title="Tasks">
       <Container>
         <Row>
           <Col>

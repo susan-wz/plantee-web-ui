@@ -1,6 +1,7 @@
 import { Nav } from "../index"
 import StyledLayout from "./styles"
 import { Icon, Heading } from "../../elements"
+import { Link } from "react-router-dom";
 
 export default function Layout({ children, settings, title, back }) {
 
@@ -10,7 +11,7 @@ export default function Layout({ children, settings, title, back }) {
       <StyledLayout>
         <div>
           {back ? <Icon symbol="back" /> : <div />}
-          {settings ? <Icon symbol="settings" /> : <div />}
+          {settings ? <Link to="/settings"><Icon symbol="settings" /></Link> : <div />}
         </div>
         <Heading size="H1">{title}</Heading>
         {children}

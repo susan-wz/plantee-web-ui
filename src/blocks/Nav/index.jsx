@@ -7,9 +7,15 @@ export default function Nav() {
   return (
     <>
       <MobileNav>
-        <Icon symbol="tasks" colour="primary" size={36} />
-        <Icon symbol="leaf" colour="primary" size={36} />
-        <Icon symbol="lightbulb" colour="primary" size={36} />
+        <Link to="/">
+          <Icon symbol="tasks" colour="primary" size={36} />
+        </Link>
+        <Link to="/my_plants">
+          <Icon symbol="leaf" colour="primary" size={36} />
+        </Link>
+        <Link to="/explore">
+          <Icon symbol="lightbulb" colour="primary" size={36} />
+        </Link>
       </MobileNav>
       <DesktopNav>
         <div>
