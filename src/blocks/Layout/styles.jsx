@@ -10,7 +10,7 @@ const StyledLayout = styled.div`
     justify-content: space-between;
   }
   > h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   @media ${breakpoint.lg} {
     padding-left: 320px;
