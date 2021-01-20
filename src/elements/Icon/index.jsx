@@ -30,10 +30,11 @@ import {
   Upload
 } from "./svgs"
 
-export default function Icon({ colour, symbol, size }) {
+export default function Icon({ colour, symbol, size, background }) {
   const iconColour = colour ? colour : 'dark-neutral';
   const iconSymbol = symbol ? symbol : 'leaf';
   const iconSize = size ? size : 24;
+  const iconBackground = background ? background : false ;
   let iconSvg;
 
   switch (iconSymbol) {
@@ -126,6 +127,6 @@ export default function Icon({ colour, symbol, size }) {
   }
 
   return (
-    <StyledIcon colour={iconColour} size={iconSize}>{iconSvg}</StyledIcon>
+    <StyledIcon colour={iconColour} size={iconSize} background={iconBackground}>{iconSvg}</StyledIcon>
   );
 }

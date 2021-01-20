@@ -13,6 +13,10 @@ const StyledIcon = styled.i`
   }};
   height: ${props => props.size}px;
   width: ${props => props.size}px;
+  border-radius: ${props => props.background ? "50%" : null};
+  background-color: ${props => props.background ? props.theme.primary : null };
+  padding: ${props => props.background ? "12px" : null};
+  overflow: visible;
 }
 `
 
