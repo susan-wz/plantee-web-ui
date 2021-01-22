@@ -14,7 +14,7 @@ export default function Nav() {
           <Icon symbol="leaf" colour="primary" size={36} />
         </Link>
         <Link to="/explore">
-          <Icon symbol="lightbulb" colour="primary" size={36} />
+          <Icon symbol="search" colour="primary" size={36} />
         </Link>
       </MobileNav>
       <DesktopNav>
@@ -29,7 +29,7 @@ export default function Nav() {
             <li><Icon symbol="leaf" colour="primary" size={36} /><Heading size="H4" align="left" colour="primary">My Plants</Heading></li>
           </Link>
           <Link to="/explore">
-            <li><Icon symbol="lightbulb" colour="primary" size={36} /><Heading size="H4" align="left" colour="primary">Explore Plants</Heading></li>
+            <li><Icon symbol="search" colour="primary" size={36} /><Heading size="H4" align="left" colour="primary">Explore Plants</Heading></li>
           </Link>
           <Link to="/settings">
             <li><Icon symbol="settings" colour="primary" size={36} /><Heading size="H4" align="left" colour="primary">Settings</Heading></li>
