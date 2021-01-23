@@ -11,21 +11,11 @@ function App() {
       <GlobalStyles />
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Tasks />
-          </Route>
-          <Route exact path="/explore">
-            <Explore />
-          </Route>
-          <Route exact path="/my_plants">
-            <MyPlants />
-          </Route>
-          <Route exact path="/add_plants">
-            <AddPlants />
-          </Route>
-          <Route exact path="/settings">
-            <Settings />
-          </Route>
+          <Route exact path="/" component={Tasks} />
+          <Route exact path="/explore" component={Explore} />
+          <Route exact path="/my_plants" component={MyPlants} />
+          <Route exact path="/add_plants" component={AddPlants} />
+          <Route exact path="/settings" component={Settings} />
         </Switch>
       </Router>
     </ThemeProvider>
