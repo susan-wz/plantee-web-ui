@@ -1,5 +1,4 @@
 import { Layout } from "../blocks"
-import { Icon } from "../elements"
 
 export default function NotFound() {
   return (

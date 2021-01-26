@@ -1,5 +1,5 @@
 import { Nav } from "../index"
-import { StyledLayout , StyledButton} from "./styles"
+import { StyledLayout, StyledButton } from "./styles"
 import { Icon, Heading } from "../../elements"
 import { Link, useHistory } from "react-router-dom";
 
