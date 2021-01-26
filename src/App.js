@@ -18,7 +18,7 @@ function App() {
           <Route path="/explore">
             <Explore />
           </Route>
-          <Route exact path="/my_plants">
+          <Route path="/my_plants">
             <MyPlants />
           </Route>
           <Route exact path="/add_plants">
