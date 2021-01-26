@@ -6,6 +6,7 @@ import theme from "./styles/theme"
 import { GlobalStyles } from "./styles/global"
 
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -14,7 +15,7 @@ function App() {
           <Route exact path="/">
             <Tasks />
           </Route>
-          <Route exact path="/explore">
+          <Route path="/explore">
             <Explore />
           </Route>
           <Route exact path="/my_plants">
