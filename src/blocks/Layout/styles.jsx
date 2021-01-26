@@ -19,4 +19,9 @@ const StyledLayout = styled.div`
   }
 `
 
-export default StyledLayout
+const StyledButton = styled.button`
+  background-color: transparent;
+  border: none;
+`;
+
+export {StyledLayout, StyledButton}
