@@ -1,20 +1,5 @@
 import { Layout, PlantCard } from "../blocks"
-import { Icon, CardGrid, Section } from "../elements"
-import styled from 'styled-components'
-import breakpoint from "../styles/breakpoints"
-import { Link } from "react-router-dom";
-
-const FixedButton = styled.div`
-  position: fixed;
-  bottom: 104px;
-  right: 24px;
-  z-index: 3;
-  @media ${breakpoint.lg} {
-    bottom: 36px;
-    right: 36px;
-  }
-`;
-
+import { Icon, CardGrid, Section, FixedAddButton } from "../elements"
 
 export default function MyPlants() {
   return (
@@ -32,11 +17,7 @@ export default function MyPlants() {
           <PlantCard plantName="Hanky Dwarf Aloe" plantCategory="Succulent" photoUrl={"https://res.cloudinary.com/susanwz/image/upload/v1611083727/Plantee/image_31_iwm6da.jpg"} />
         </CardGrid>
       </Section>
-      <FixedButton>
-      <Link to="/add_plants">
-        <Icon symbol="addFilled" size={48} colour="primary" />
-        </Link>
-      </FixedButton>
+      <FixedAddButton />
     </Layout>
   );
 }
