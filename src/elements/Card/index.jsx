@@ -1,6 +1,6 @@
 import StyledCard from "./styles"
 
-export default function Card({ background, border, shadow, children, width, className }) {
+export default function Card({ background, border, shadow, children, width, className, key }) {
   const cardBackground = background ? background : null;
   const cardBorder = border ? border : false;
   const cardShadow = shadow ? shadow : false;
