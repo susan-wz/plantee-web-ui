@@ -6,7 +6,7 @@ export default function ExplorePlantDetail() {
   let { name } = useParams();
   
   return (
-    <Layout back title="Plant Detail">
+    <Layout back iconBackgrounds title="Explore Plant Detail">
       <p>test: {name}</p>
     </Layout>
   );

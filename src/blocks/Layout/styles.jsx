@@ -4,7 +4,7 @@ import breakpoint from "../../styles/breakpoints"
 const StyledLayout = styled.div`
   position: relative;
   z-index: 1;
-  margin: 2rem;
+  margin: 2rem 2rem 5rem 2rem;
   > :first-child {
     display: flex;
     justify-content: space-between;

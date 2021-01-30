@@ -15,7 +15,13 @@ const StyledIcon = styled.i`
   width: ${props => props.size}px;
   border-radius: ${props => props.background ? "50%" : null};
   background-color: ${props => props.background ? props.theme.primary : null };
-  padding: ${props => props.background ? "12px" : null};
+  padding: ${props => {
+    if(props.background && props.size >= 48) {
+      return "12px"
+    } else {
+      return "0px"
+    }
+  }};
   overflow: visible;
 }
 `
