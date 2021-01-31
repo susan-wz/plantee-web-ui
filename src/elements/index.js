@@ -6,5 +6,6 @@ import Card from "./Card"
 import CardGrid from "./CardGrid"
 import Section from "./Section"
 import FixedAddButton from "./FixedAddButton"
+import GenericModal from "./Modal"
 
-export { Heading, Paragraph, Caption, Icon, Card, CardGrid, Section, FixedAddButton }
+export { Heading, Paragraph, Caption, Icon, Card, CardGrid, Section, FixedAddButton, GenericModal }
