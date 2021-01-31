@@ -1,4 +1,4 @@
-import StyledIcon from "./styles"
+import StyledIcon from "./styles";
 import {
   AddFilled,
   AddFromGallery,
@@ -27,106 +27,113 @@ import {
   TakePhoto,
   Tasks,
   UpArrow,
-  Upload
-} from "./svgs"
+  Upload,
+} from "./svgs";
 
-export default function Icon({ colour, symbol, size, background }) {
-  const iconColour = colour ? colour : 'dark-neutral';
-  const iconSymbol = symbol ? symbol : 'leaf';
+export default function Icon({ colour, symbol, size, background, onClick }) {
+  const iconColour = colour ? colour : "dark-neutral";
+  const iconSymbol = symbol ? symbol : "leaf";
   const iconSize = size ? size : 24;
-  const iconBackground = background ? background : false ;
+  const iconBackground = background ? background : false;
   let iconSvg;
 
   switch (iconSymbol) {
     case "back":
-      iconSvg = <Back />
-      break
+      iconSvg = <Back />;
+      break;
     case "addFilled":
-      iconSvg = <AddFilled />
-      break
+      iconSvg = <AddFilled />;
+      break;
     case "addOutline":
-      iconSvg = <AddOutline />
-      break
+      iconSvg = <AddOutline />;
+      break;
     case "drop":
-      iconSvg = <Drop />
-      break
+      iconSvg = <Drop />;
+      break;
     case "lightbulb":
-      iconSvg = <Lightbulb />
-      break
+      iconSvg = <Lightbulb />;
+      break;
     case "delay":
-      iconSvg = <Delay />
-      break
+      iconSvg = <Delay />;
+      break;
     case "calendar":
-      iconSvg = <Calendar />
-      break
+      iconSvg = <Calendar />;
+      break;
     case "edit":
-      iconSvg = <Edit />
-      break
+      iconSvg = <Edit />;
+      break;
     case "favourite":
-      iconSvg = <Favourite />
-      break
+      iconSvg = <Favourite />;
+      break;
     case "sort":
-      iconSvg = <Sort />
-      break
+      iconSvg = <Sort />;
+      break;
     case "leaf":
-      iconSvg = <Leaf />
-      break
+      iconSvg = <Leaf />;
+      break;
     case "addFromGallery":
-      iconSvg = <AddFromGallery />
-      break
+      iconSvg = <AddFromGallery />;
+      break;
     case "check":
-      iconSvg = <Check />
-      break
+      iconSvg = <Check />;
+      break;
     case "delete":
-      iconSvg = <Delete />
-      break
+      iconSvg = <Delete />;
+      break;
     case "downArrow":
-      iconSvg = <DownArrow />
-      break
+      iconSvg = <DownArrow />;
+      break;
     case "fertilizer":
-      iconSvg = <Fertilizer />
-      break
+      iconSvg = <Fertilizer />;
+      break;
     case "filter":
-      iconSvg = <Filter />
-      break
+      iconSvg = <Filter />;
+      break;
     case "logo":
-      iconSvg = <Logo />
-      break
+      iconSvg = <Logo />;
+      break;
     case "next":
-      iconSvg = <Next />
-      break
+      iconSvg = <Next />;
+      break;
     case "previous":
-      iconSvg = <Previous />
-      break
+      iconSvg = <Previous />;
+      break;
     case "repeat":
-      iconSvg = <Repeat />
-      break
+      iconSvg = <Repeat />;
+      break;
     case "save":
-      iconSvg = <Save />
-      break
+      iconSvg = <Save />;
+      break;
     case "search":
-      iconSvg = <Search />
-      break
+      iconSvg = <Search />;
+      break;
     case "settings":
-      iconSvg = <Settings />
-      break
+      iconSvg = <Settings />;
+      break;
     case "takePhoto":
-      iconSvg = <TakePhoto />
-      break
+      iconSvg = <TakePhoto />;
+      break;
     case "tasks":
-      iconSvg = <Tasks />
-      break
+      iconSvg = <Tasks />;
+      break;
     case "upArrow":
-      iconSvg = <UpArrow />
-      break
+      iconSvg = <UpArrow />;
+      break;
     case "upload":
-      iconSvg = <Upload />
-      break
+      iconSvg = <Upload />;
+      break;
     default:
-      iconSvg = null
+      iconSvg = null;
   }
 
   return (
-    <StyledIcon colour={iconColour} size={iconSize} background={iconBackground}>{iconSvg}</StyledIcon>
+    <StyledIcon
+      colour={iconColour}
+      size={iconSize}
+      background={iconBackground}
+      onClick={onClick}
+    >
+      {iconSvg}
+    </StyledIcon>
   );
 }
