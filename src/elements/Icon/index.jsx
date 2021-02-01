@@ -6,6 +6,7 @@ import {
   Back,
   Calendar,
   Check,
+  Close,
   Delay,
   Delete,
   DownArrow,
@@ -76,6 +77,9 @@ export default function Icon({ colour, symbol, size, background, onClick }) {
       break;
     case "check":
       iconSvg = <Check />;
+      break;
+    case "close":
+      iconSvg = <Close />;
       break;
     case "delete":
       iconSvg = <Delete />;
