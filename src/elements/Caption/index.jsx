@@ -1,10 +1,16 @@
-import StyledCaption from "./styles"
+import StyledCaption from "./styles";
 
 export default function Caption({ invert, align, colour, children }) {
-  const captionAlignment = align ? align : 'center'
-  const captionColour = colour ? colour : 'dark-neutral'
+  const captionAlignment = align ? align : "center";
+  const captionColour = colour ? colour : "dark-neutral";
 
   return (
-    <StyledCaption invert={invert} align={captionAlignment} colour={captionColour}>{children}</StyledCaption>
+    <StyledCaption
+      invert={invert}
+      align={captionAlignment}
+      colour={captionColour}
+    >
+      {children}
+    </StyledCaption>
   );
 }

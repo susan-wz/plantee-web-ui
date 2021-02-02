@@ -52,7 +52,11 @@ export default function Explore() {
             <CardGrid>{cards}</CardGrid>
           </Section>
           <FixedAddButton />
-          <ActionModal modalIsOpen={modalIsOpen} closeModal={closeModal} title="hey modal" />
+          <ActionModal
+            modalIsOpen={modalIsOpen}
+            closeModal={closeModal}
+            title="hey modal"
+          />
         </Layout>
       </Route>
       <Route path={`${path}/:name`}>
