@@ -1,29 +1,41 @@
-import { useState } from 'react'
-import { Layout, Searchbar, PlantCard } from "../blocks"
-import { Icon, CardGrid, Section, FixedAddButton, GenericModal } from "../elements"
-import { ExplorePlantDetail } from "./index"
+import { useState } from "react";
+import { Layout, Searchbar, PlantCard, ActionModal } from "../blocks";
 import {
-  Switch,
-  Route,
-  Link,
-  useRouteMatch
-} from "react-router-dom";
-import plantData from "./tempPlantData"
+  Icon,
+  CardGrid,
+  Section,
+  FixedAddButton,
+  GenericModal,
+} from "../elements";
+import { ExplorePlantDetail } from "./index";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
+import plantData from "./tempPlantData";
 
 export default function Explore() {
   let { url, path } = useRouteMatch();
 
-  const [modalIsOpen, setModalOpen] = useState(false)
+  const [modalIsOpen, setModalOpen] = useState(false);
 
   const cards = plantData.map((plant) => {
-    return <Link to={`${url}/${plant.id}`} key={plant.id}>
-      <PlantCard plantName={plant.name} plantCategory={plant.category} showCategory photoUrl={plant.photo} />
-    </Link>
-  })
+    return (
+      <Link to={`${url}/${plant.id}`} key={plant.id}>
+        <PlantCard
+          plantName={plant.name}
+          plantCategory={plant.category}
+          showCategory
+          photoUrl={plant.photo}
+        />
+      </Link>
+    );
+  });
 
   const openModal = () => {
-    setModalOpen(true)
-  }
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <Switch>
@@ -37,12 +49,10 @@ export default function Explore() {
             <Icon symbol="sort" size={28} onClick={openModal} />
           </Section>
           <Section>
-            <CardGrid>
-              {cards}
-            </CardGrid>
+            <CardGrid>{cards}</CardGrid>
           </Section>
           <FixedAddButton />
-          <GenericModal modalIsOpen={modalIsOpen} />
+          <ActionModal modalIsOpen={modalIsOpen} closeModal={closeModal} title="hey modal" />
         </Layout>
       </Route>
       <Route path={`${path}/:name`}>
@@ -51,4 +61,3 @@ export default function Explore() {
     </Switch>
   );
 }
-
