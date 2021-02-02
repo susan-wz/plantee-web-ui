@@ -1,21 +1,22 @@
-import { Layout, PlantCard } from "../blocks"
-import { Icon, CardGrid, Section, FixedAddButton } from "../elements"
-import { MyPlantDetail } from "./index"
-import {
-  Switch,
-  Route,
-  Link,
-  useRouteMatch
-} from "react-router-dom";
-import plantData from "./tempPlantData"
+import { Layout, PlantCard } from "../blocks";
+import { Icon, CardGrid, Section, FixedAddButton } from "../elements";
+import { MyPlantDetail } from "./index";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
+import plantData from "./tempPlantData";
 
 export default function MyPlants() {
   let { url, path } = useRouteMatch();
   const cards = plantData.map((plant) => {
-    return <Link to={`${url}/${plant.id}`} key={plant.id}>
-      <PlantCard plantName={plant.name} plantCategory={plant.category} photoUrl={plant.photo} />
-    </Link>
-  })
+    return (
+      <Link to={`${url}/${plant.id}`} key={plant.id}>
+        <PlantCard
+          plantName={plant.name}
+          plantCategory={plant.category}
+          photoUrl={plant.photo}
+        />
+      </Link>
+    );
+  });
 
   return (
     <Switch>
@@ -26,9 +27,7 @@ export default function MyPlants() {
             <Icon symbol="sort" size={28} />
           </Section>
           <Section>
-            <CardGrid>
-              {cards}
-            </CardGrid>
+            <CardGrid>{cards}</CardGrid>
           </Section>
           <FixedAddButton />
         </Layout>

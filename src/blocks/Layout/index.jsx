@@ -19,7 +19,11 @@ export default function Layout({
         <div>
           {back ? (
             <StyledButton type="button" onClick={() => history.goBack()}>
-              <Icon background={iconBackgrounds} symbol="back" colour={iconBackgrounds ? "white" : "dark-neutral"} />
+              <Icon
+                background={iconBackgrounds}
+                symbol="back"
+                colour={iconBackgrounds ? "white" : "dark-neutral"}
+              />
             </StyledButton>
           ) : (
             <div />

@@ -4,6 +4,7 @@ import AddOutline from "./AddOutline"
 import Back from "./Back"
 import Calendar from "./Calendar"
 import Check from "./Check"
+import Close from "./Close"
 import Delay from "./Delay"
 import Delete from "./Delete"
 import DownArrow from "./DownArrow"
@@ -27,7 +28,6 @@ import Tasks from "./Tasks"
 import UpArrow from "./UpArrow"
 import Upload from "./Upload"
 
-
 export {
   AddFilled,
   AddFromGallery,
@@ -35,6 +35,7 @@ export {
   Back,
   Calendar,
   Check,
+  Close,
   Delay,
   Delete,
   DownArrow,
