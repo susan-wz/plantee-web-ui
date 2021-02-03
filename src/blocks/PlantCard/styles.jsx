@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Card } from "../../elements"
 
-const StyledPlantCard = styled(Card)`
+const StyledPlantCard = styled.div`
   display: inline-block;
   width: 156px;
   height: 188px;

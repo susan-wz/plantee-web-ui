@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import breakpoint from "../../styles/breakpoints"
-import { Card } from "../../elements"
 
-const StyledTaskCard = styled(Card)`
+const StyledTaskCard = styled.div`
   background-color: ${props => props.background === "accent" ? props.theme.accent : props.theme.secondary};
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border: 1px solid ${props => props.theme.mediumNeutral};
   display: flex;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+  border-radius: 8px;
+  width: 100%;
 `
 
 const DesktopTaskIcon = styled.div`
