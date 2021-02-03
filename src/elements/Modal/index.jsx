@@ -1,5 +1,8 @@
-import { StyledModal, customStyles, CloseIcon, ModalContent } from "./styles";
+import { CloseIcon, ModalContent } from "./styles";
 import { Icon, Heading } from "../index";
+import Modal from "react-modal";
+
+import "./modal.css"
 
 export default function GenericModal({
   title,
@@ -7,14 +10,16 @@ export default function GenericModal({
   modalIsOpen,
   closeModal,
 }) {
-  StyledModal.setAppElement("#root");
+  Modal.setAppElement("#root");
 
   return (
-    <StyledModal
+    <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
       shouldCloseOnOverlayClick={true}
-      style={customStyles}
+      overlayClassName={'ReactModal__Overlay'}
+      className={'ReactModal__Content'}
+      closeTimeoutMS={200}
     >
       <CloseIcon>
         <Icon symbol="close" onClick={closeModal} />
@@ -23,6 +28,6 @@ export default function GenericModal({
         <Heading size="H2">{title}</Heading>
         {children}
       </ModalContent>
-    </StyledModal>
+    </Modal>
   );
 }

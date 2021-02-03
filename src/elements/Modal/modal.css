@@ -1,0 +1,80 @@
+.ReactModal__Overlay {
+  z-index: 100;
+  position: fixed;
+  inset: 0px;
+  background-color: rgb(255, 255, 255, 0.75);
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: auto;
+  width: 100%;
+  bottom: 0px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  animation: animatebottomin 0.4s;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 200ms ease-out 200ms;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  animation: animatebottomout 0.4s;
+}
+
+@keyframes animatebottomin {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottomout {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    bottom: -300px;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ReactModal__Content {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    transform: translate(-50%, -50%);
+    animation: none;
+  }
+  .ReactModal__Overlay--before-close {
+    animation: fadeout 0.4s;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
