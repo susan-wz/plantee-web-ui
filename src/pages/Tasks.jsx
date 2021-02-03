@@ -1,11 +1,22 @@
-import { Layout, TaskCard, TaskDayHeading } from "../blocks";
+import { useState } from "react";
+import { Layout, TaskCard, TaskDayHeading, ConfirmationModal } from "../blocks";
 import { Icon, Section } from "../elements";
 
 export default function Tasks() {
+  const [modalIsOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <Layout settings title="Tasks">
       <Section align="left">
-        <Icon symbol="filter" size={28} />
+        <Icon symbol="filter" size={28} onClick={openModal} />
       </Section>
       <TaskDayHeading date={"15 Dec 2020"} />
       <TaskCard
@@ -32,6 +43,12 @@ export default function Tasks() {
         plantName={"Pilea"}
         lastEvent={"4 Dec 2020"}
         frequency={8}
+      />
+      <ConfirmationModal
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+        title="hey task modal"
+        type="delete"
       />
     </Layout>
   );

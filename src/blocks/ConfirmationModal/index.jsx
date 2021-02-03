@@ -1,4 +1,5 @@
-import { GenericModal } from "../../elements";
+import { GenericModal, Button, Paragraph } from "../../elements";
+import { ContentDiv, ButtonDiv } from "./styles";
 
 export default function ConfirmationModal({
   modalIsOpen,
@@ -11,19 +12,57 @@ export default function ConfirmationModal({
 
   switch (modalType) {
     case "delete":
-      modalContent = <div />;
+      modalContent = (
+        <>
+          <Paragraph>Are you sure you want to delete?</Paragraph>
+          <ButtonDiv>
+            <Button variant="invert" text="Cancel" />
+            <Button variant="primary" text="Delete" />
+          </ButtonDiv>
+        </>
+      );
       break;
     case "delay":
-      modalContent = <div />;
+      modalContent = (
+        <>
+          <Paragraph>Delay for a day?</Paragraph>
+          <ButtonDiv>
+            <Button variant="invert" text="Cancel" />
+            <Button variant="primary" text="Delete" />
+          </ButtonDiv>
+        </>
+      );
       break;
     case "watered":
-      modalContent = <div />;
+      modalContent = (
+        <>
+          <Paragraph>Are you sure?</Paragraph>
+          <ButtonDiv>
+            <Button variant="invert" text="Cancel" />
+            <Button variant="primary" text="Delete" />
+          </ButtonDiv>
+        </>
+      );
       break;
     case "addPlant":
-      modalContent = <div />;
+      modalContent = (
+        <>
+          <Paragraph>Add to plant collection?</Paragraph>
+          <ButtonDiv>
+            <Button variant="invert" text="Cancel" />
+            <Button variant="primary" text="Delete" />
+          </ButtonDiv>
+        </>
+      );
       break;
     case "addFavourite":
-      modalContent = <div />;
+      modalContent = (
+        <ButtonDiv>
+          <Paragraph>Add to favourites?</Paragraph>
+          <Button variant="invert" text="Cancel" />
+          <Button variant="primary" text="Delete" />
+        </ButtonDiv>
+      );
       break;
     default:
       modalContent = null;
@@ -35,7 +74,7 @@ export default function ConfirmationModal({
       closeModal={closeModal}
       title={title}
     >
-      {modalContent}
+      <ContentDiv>{modalContent}</ContentDiv>
     </GenericModal>
   );
 }

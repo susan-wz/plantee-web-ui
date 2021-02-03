@@ -5,7 +5,6 @@ import {
   CardGrid,
   Section,
   FixedAddButton,
-  GenericModal,
 } from "../elements";
 import { ExplorePlantDetail } from "./index";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
