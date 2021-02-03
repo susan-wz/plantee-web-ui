@@ -1,7 +1,7 @@
 import StyledCaption from "./styles";
 
 export default function Caption({ invert, align, colour, children }) {
-  const captionAlignment = align ? align : "center";
+  const captionAlignment = align ? align : "left";
   const captionColour = colour ? colour : "dark-neutral";
 
   return (
