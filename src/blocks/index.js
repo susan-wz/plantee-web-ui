@@ -6,6 +6,7 @@ import Searchbar from "./Searchbar";
 import PlantCard from "./PlantCard";
 import ActionModal from "./ActionModal";
 import ConfirmationModal from "./ConfirmationModal";
+import PlantTitleCard from "./PlantTitleCard"
 
 export {
   Nav,
@@ -16,4 +17,5 @@ export {
   PlantCard,
   ActionModal,
   ConfirmationModal,
+  PlantTitleCard
 };
