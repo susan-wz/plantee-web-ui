@@ -110,5 +110,9 @@ color: ${props => {
     font-size: 26px;
   }
 `
+H1.displayName = "H1"
+H2.displayName = "H2"
+H3.displayName = "H3"
+H4.displayName = "H4"
 
 export { H1, H2, H3, H4 }

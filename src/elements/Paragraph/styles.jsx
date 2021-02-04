@@ -53,4 +53,6 @@ const StyledParagraph = styled.p`
   }
 `
 
+StyledParagraph.displayName = "Paragraph"
+
 export default StyledParagraph
