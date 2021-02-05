@@ -25,4 +25,6 @@ const StyledCaption = styled.p`
   }};
 `
 
+StyledCaption.displayName = "Caption"
+
 export default StyledCaption

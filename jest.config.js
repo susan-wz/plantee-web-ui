@@ -1,5 +1,13 @@
 module.exports = {
-  verbose: true,
+  rootDir: "./src",
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.{js,jsx}']
+  coverageReporters: ["lcov"],
+  collectCoverageFrom: [
+    "**/*.{js,jsx}",
+    "src/**/*.{js,jsx}",
+    "src/**/**/*.{js,jsx}",
+    "!**/node_modules/**",
+  ],
+  coverageDirectory: "./coverage",
+  setupFiles: ["<rootDir>/src/setupTests.js"],
 };
