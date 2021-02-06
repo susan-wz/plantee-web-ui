@@ -10,4 +10,5 @@ module.exports = {
   ],
   coverageDirectory: "./coverage",
   setupFiles: ["<rootDir>/src/setupTests.js"],
+  snapshotSerializers: ["enzyme-to-json/serializer"]
 };
