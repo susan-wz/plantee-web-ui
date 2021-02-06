@@ -1,5 +1,4 @@
 import { shallow, mount } from "enzyme";
-import "jest-styled-components";
 import Icon from "../index";
 import {
   Leaf,

@@ -1,6 +1,5 @@
 import { shallow, mount } from "enzyme";
 import Paragraph from "../index";
-import "jest-styled-components";
 
 const paragraphText = "Test paragraph";
 
