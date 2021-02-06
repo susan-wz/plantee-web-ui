@@ -1,6 +1,5 @@
 import { shallow, mount } from "enzyme"
 import Caption from "../index"
-import "jest-styled-components";
 
 const captionText = "Test caption"
 

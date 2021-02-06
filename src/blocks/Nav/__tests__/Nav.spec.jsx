@@ -2,7 +2,6 @@ import Nav from "../index";
 import { BrowserRouter as Router } from "react-router-dom";
 import theme from "../../../styles/theme";
 // import breakpoint from "../../../styles/breakpoints";
-import "jest-styled-components";
 import { mountWithTheme } from "../../../testHelpers"
 
 const children = <div />;
