@@ -57,7 +57,7 @@ color: ${props => {
 `
 
 const H3 = styled.h3`
-color: ${props => {
+  color: ${props => {
     if (props.colour === "primary") {
       return props.theme.primary
     } else if (props.colour === "white") {
