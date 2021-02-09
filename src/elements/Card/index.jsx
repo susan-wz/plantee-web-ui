@@ -6,8 +6,7 @@ export default function Card({
   shadow,
   children,
   width,
-  className,
-  key,
+  className
 }) {
   const cardBackground = background ? background : null;
   const cardBorder = border ? border : false;
