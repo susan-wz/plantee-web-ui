@@ -7,6 +7,7 @@ import PlantCard from "./PlantCard";
 import ActionModal from "./ActionModal";
 import ConfirmationModal from "./ConfirmationModal";
 import PlantTitleCard from "./PlantTitleCard"
+import TextWithBackground from "./TextWithBackground"
 
 export {
   Nav,
@@ -17,5 +18,6 @@ export {
   PlantCard,
   ActionModal,
   ConfirmationModal,
-  PlantTitleCard
+  PlantTitleCard,
+  TextWithBackground
 };

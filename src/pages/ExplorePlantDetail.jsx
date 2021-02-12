@@ -1,4 +1,4 @@
-import { Layout, PlantTitleCard } from "../blocks";
+import { Layout, PlantTitleCard, TextWithBackground } from "../blocks";
 import { Heading, Paragraph, Icon } from "../elements"
 import { useParams } from "react-router-dom";
 import { HeaderPhoto } from "./styles";
@@ -15,6 +15,7 @@ export default function ExplorePlantDetail() {
         />
       </HeaderPhoto>
       <PlantTitleCard title={name} />
+      <TextWithBackground text="Let dry before watering." />
       <Heading align="left" size="H3">Description</Heading>
       <Paragraph>Description items about this plant. How it looks, where it's from. Nice stuff like that. Maybe even some fun facts.</Paragraph>
       <Icon symbol="addOutline" background colour="white" /><Icon symbol="favourite" background colour="white" />

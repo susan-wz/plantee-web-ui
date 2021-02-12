@@ -9,6 +9,7 @@ const StyledPlantTitleCard = styled.div`
   padding: 1rem;
   position: relative;
   margin-top: 6rem;
+  margin-bottom: 1rem;
 `
 
 export { StyledPlantTitleCard }
