@@ -1,7 +1,15 @@
 import { Layout, PlantTitleCard, TextWithBackground } from "../blocks";
 import { Heading, Paragraph, Icon } from "../elements";
 import { useParams } from "react-router-dom";
-import { HeaderPhoto, MobileLayout, DesktopLayout, LeftCol, RightCol } from "./styles";
+import {
+  FixedHeaderPhoto,
+  MobileLayout,
+  DesktopLayout,
+  LeftCol,
+  RightCol,
+  DesktopImagePhoto,
+  ButtonDiv
+} from "./styles";
 
 export default function ExplorePlantDetail() {
   let { name } = useParams();
@@ -9,12 +17,12 @@ export default function ExplorePlantDetail() {
   return (
     <Layout back iconBackgrounds>
       <MobileLayout>
-        <HeaderPhoto>
+        <FixedHeaderPhoto>
           <img
             src="https://res.cloudinary.com/susanwz/image/upload/v1611083728/Plantee/image_29_ljb62c.jpg"
             alt="test"
           />
-        </HeaderPhoto>
+        </FixedHeaderPhoto>
         <PlantTitleCard title={name} />
         <TextWithBackground text="Let dry before watering." />
         <Heading align="left" size="H3">
@@ -29,15 +37,17 @@ export default function ExplorePlantDetail() {
       </MobileLayout>
       <DesktopLayout>
         <LeftCol>
-          <HeaderPhoto>
+          <DesktopImagePhoto>
             <img
               src="https://res.cloudinary.com/susanwz/image/upload/v1611083728/Plantee/image_29_ljb62c.jpg"
               alt="test"
             />
-          </HeaderPhoto>
+          </DesktopImagePhoto>
           <PlantTitleCard title={name} />
-          <Icon symbol="addOutline" background colour="white" />
-          <Icon symbol="favourite" background colour="white" />
+          <ButtonDiv>
+            <Icon symbol="addOutline" background colour="white" size={48} />
+            <Icon symbol="favourite" background colour="white" size={48} />
+          </ButtonDiv>
         </LeftCol>
         <RightCol>
           <Heading align="left" size="H3">

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoint from "../../styles/breakpoints";
 
 const StyledPlantTitleCard = styled.div`
   background-color: ${props => props.theme.white};
@@ -10,6 +11,9 @@ const StyledPlantTitleCard = styled.div`
   position: relative;
   margin-top: 6rem;
   margin-bottom: 1rem;
+  @media ${breakpoint.lg} {
+    margin-top: 1rem;
+  }
 `
 
 export { StyledPlantTitleCard }
